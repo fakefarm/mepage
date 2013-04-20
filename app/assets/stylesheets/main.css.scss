@@ -25,6 +25,21 @@ footer{
     font-size: 1.1em;
     font-weight: bold;
     opacity: .9;
+    &:hover{
+      background: #FF5E43;
+      opacity: 1;
+      color: black;
+    }
+  }
+  a{
+    text-decoration: none;
+    color: #FF5E43;
+    &:hover{
+      background: #FF5E43;
+      opacity: 1;
+      color: black;
+    }
+
   }
 }
 
@@ -117,6 +132,7 @@ ul{
 .about-pic{
   width: 15%;
   float: left;
+  margin: 15px;
 }
 
 
