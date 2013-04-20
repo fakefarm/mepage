@@ -1,0 +1,53 @@
+%section.intro
+  %h1 Dave Woodall
+  %h2 Boulder, CO
+.container
+  %section.text
+    %section.my-interests
+      %nav
+        %ul
+          %li.box-it#about About me.
+          %li.box-it#hire-dave hire Dave
+          %li.box-it#catmathdo Cat Math Do
+          %li.box-it#flipface Flip Face
+          %li.box-it#afterburners Afterburners
+
+
+
+
+  %section.side-bar
+    .listy.box-it#about
+      %h2 About
+      .about-pic=image_tag 'me.jpg'
+      %p Living in Boulder feels like living in the Shire, from the Hobbit. Small, quaint, and beautiful. I enjoy spending my time with my family, learning to program, building businesses, and getting outdoors as much as possible.
+
+    .listy.box-it#hire-dave
+      %h2 hireDave.me
+      %p I do freelance web design, web development, and business consulting. Let me know if you need some help.
+
+    .listy.box-it#catmathdo
+      = image_tag "catmathdo.jpg"
+      %h2 Cat Math Do
+      %p In teaching Oscar about math, I came up with a boardgame.
+      %ul
+        %li= link_to "Visit CatMathDo.com", 'http://www.catmathdo.com'
+
+    .listy.box-it#flipface
+      = image_tag "kids.jpg"
+      %h2 Flipface
+      %p A two-tshirt costume I invented.
+
+
+    .listy.box-it#afterburners
+      = image_tag "abcd.jpg"
+      %h2 Afterburners CD Exchange Club.
+      %p I started a club with 2 other friends. We made a mix and the album cover artwork. We ended up making 71 albums. It was the way I learned of new music for nearly 7 years.
+      %ul
+        %li= link_to "Visit The old site", 'http://www.afterburnersclub.blogspot.com'
+
+%footer
+  %ul
+    %li 303 416 7032
+    %li dave@woodalls.me
+    %li @dmwoodall
+    %li hireDave.me

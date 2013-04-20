@@ -1,0 +1,123 @@
+$serif: Rokkitt;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #FF5E43;
+  color: #FF5E43;
+}
+
+footer{
+  background: yellow;
+  opacity: .9;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  ul{
+    list-style: none;
+    text-align: right;
+  }
+  li{
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    opacity: .9;
+  }
+}
+
+.container{
+  @include outer-container;
+  margin: 3% 0;
+  padding: 2%;
+  max-width: 1000px;
+  min-width: 700px;
+}
+
+
+.intro{
+  background-color:rgba(255,255,255,.4);
+  overflow: auto;
+  h1{
+    color: #FF5E43;
+    margin: 4% 0 0 0;
+  }
+  h2{
+    margin: 1% 0;
+    padding: 0;
+  }
+}
+section.text{
+  @include span-columns(3);
+  float: left;
+}
+
+.vjs-tech{
+
+}
+
+h1{
+  font-size: 400%;
+  margin: 0 0 2% 0;
+}
+
+ul{
+  list-style: none;
+}
+
+.my-interests{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.listy{
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: black;
+}
+
+.side-bar{
+  position: relative;
+  @include span-columns(9);
+  @include omega();
+}
+
+.box-it{
+  background-color:rgba(255,255,255,.2);
+  padding: 5px;
+  margin: 5px 0;
+  img{
+    width: 100%;
+  }
+  &:hover{
+    cursor: pointer;
+    background: black;
+  }
+}
+
+
+#slides {
+  display:none;
+}
+
+.slidesjs-pagination{
+  ul{
+    list-style: none;
+  }
+  li{
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
+
+.about-pic{
+  width: 15%;
+  float: left;
+}
+
+
+
