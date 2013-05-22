@@ -1,53 +1,54 @@
 %section.intro
-  %h1 Dave Woodall
-  %h2 Boulder, CO
-.container
-  %section.text
-    %section.my-interests
-      %nav
-        %ul
-          %li.box-it#about About me.
-          %li.box-it#hire-dave hire Dave
-          %li.box-it#catmathdo Cat Math Do
-          %li.box-it#flipface Flip Face
-          %li.box-it#afterburners Afterburners
+  .container.header
+    %h1 Dave Woodall
+    %h2 Boulder, CO
 
-
-
-
-  %section.side-bar
-    .listy.box-it#about
-      %h2 About me.
-      .about-pic=image_tag 'me.jpg'
-      %p I live in Boulder with my wife (Danaé), my two sons (Oscar & Wells), and Marty (dog). Living in Boulder feels like living in the Shire from the Hobbit because it's small, quaint, and beautiful. I enjoy spending my time with my family, learning to program, building businesses, and getting outdoors as much as possible.
-
-    .listy.box-it#hire-dave
-      %h2 hireDave.me
-      %p I do freelance web design, web development, and business consulting. Let me know if you need some help.
-
-    .listy.box-it#catmathdo
-      = image_tag "catmathdo.jpg"
-      %h2 Cat Math Do
-      %p In teaching Oscar about math, I came up with a boardgame.
+%section.text
+  %section.my-interests
+    %nav
       %ul
-        %li= link_to "Visit CatMathDo.com", 'http://www.catmathdo.com'
+        %li{ data: { hover: 'about',        content_nav: 'interests' }, class: "box-it" } About
+        %li{ data: { hover: 'webcamp',    content_nav: 'interests' }, class: "box-it" } Web Camp
+        %li{ data: { hover: 'catmathdo',    content_nav: 'interests' }, class: "box-it" } Cat Math Do
+        %li{ data: { hover: 'flipface',     content_nav: 'interests' }, class: "box-it" } Flip Face
+        %li{ data: { hover: 'afterburners', content_nav: 'interests' }, class: "box-it" } Afterburners
+        %li{ data: { hover: 'hire-dave',    content_nav: 'interests' }, class: "box-it" } hire Dave
 
-    .listy.box-it#flipface
-      = image_tag "kids.jpg"
-      %h2 Flipface
-      %p A two-tshirt costume I invented.
+%section.side-bar
+  .listy.box-it#about{ :data => { content_group: 'interests'  } }
+    %h2 About
+    %p My various projects and hobbies.
 
 
-    .listy.box-it#afterburners
-      = image_tag "abcd.jpg"
-      %h2 Afterburners CD Exchange Club.
-      %p I started a club with 2 other friends. We made a mix and the album cover artwork. We ended up making 71 albums. It was the way I learned of new music for nearly 7 years.
-      %ul
-        %li= link_to "Visit The old site", 'http://www.afterburnersclub.blogspot.com'
+  .listy.box-it#webcamp{ :data => { content_group: 'interests'  } }
+    = image_tag "sign.jpg"
+    %h2 Web Camp
+    %p The internet is here to stay. Web Camp is an intro to HTML & CSS Course I'm going to be teaching, soon...
+    %ul
+      %li= link_to "Visit Web Camp", 'http://www.boulderwebcamp.com'
 
-%footer
-  %ul
-    %li 303 416 7032
-    %li dave@woodalls.me
-    %li=link_to '@dmwoodall', 'https://twitter.com/DMWoodall'
-    %li= link_to 'hireDave.me', 'http://www.hiredave.me'
+  .listy.box-it#catmathdo{ :data => { content_group: 'interests'  } }
+    = image_tag "catmathdo.jpg"
+    %h2 Cat Math Do
+    %p In teaching Oscar about math, I came up with a boardgame.
+    %ul
+      %li= link_to "Visit Cat Math Do", 'http://www.catmathdo.com'
+
+  .listy.box-it#flipface{ :data => { content_group: 'interests'  } }
+    = image_tag "kids.jpg"
+    %h2 Flipface
+    %p I invented a two shirt costume.
+
+
+  .listy.box-it#afterburners{ :data => { content_group: 'interests'  } }
+    = image_tag "abcd.jpg"
+    %h2 Afterburners.
+    %p I started a music club to keep up with new music. Each month, one of 14 members made a mix and the album cover artwork. We ended up making 71 albums.
+    %ul
+      %li= link_to "Visit the blog", 'http://www.afterburnersclub.blogspot.com'
+
+  .listy.box-it#hire-dave{ :data => { content_group: 'interests'  } }
+    %h2 hireDave, llc
+    %p I enjoy helping others with their design, code, or business needs.
+    %ul
+      %li= link_to "hireDave", 'http://www.hireDave.me'

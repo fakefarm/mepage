@@ -4,23 +4,26 @@
 
 $(document).ready(function(){
 
-  $('#about').hover(function(){
-    $('.listy.box-it#about').fadeToggle();
-  });
+  // $('#about').hover(function(){
+  //   $('.listy.box-it#about').fadeToggle();
+  // });
 
-  $('#catmathdo').hover(function(){
-    $('.listy.box-it#catmathdo').fadeToggle();
-  });
 
-  $('#flipface').hover(function(){
-    $('.listy.box-it#flipface').fadeToggle();
-  });
+  $('li').on('mouseenter', function(){
+    var $this = $(this);
+    var target = $this.data('hover'); // 'about'
+    var group_id = $this.data('content_nav') // 'interests'
+    var children = $('[data-content_group='+ group_id + ']');
+    // children.each(function(){
+    //   console.log(this);
+    //   $(this).hide();
+    // });
+    children.hide();
+    $('#' + target).show();
 
-  $('#afterburners').hover(function(){
-    $('.listy.box-it#afterburners').fadeToggle();
-  });
+    // $('[content_group]').hide();
+    // $($this).show(); // with id of $this_id
 
-  $('#hire-dave').hover(function(){
-    $('.listy.box-it#hire-dave').fadeToggle();
   });
 });
+

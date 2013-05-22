@@ -9,6 +9,23 @@ body{
   color: #FF5E43;
 }
 
+h1{
+  font-family: $montserrat;
+  font-weight: 700;
+}
+
+h2, li{
+  font-family: $montserrat;
+}
+
+p {
+
+}
+
+.wrapper{
+  @include outer-container();
+}
+
 footer{
   background: yellow;
   opacity: .9;
@@ -44,20 +61,18 @@ footer{
 }
 
 .container{
-  @include outer-container;
-  margin: 3% 0;
+  margin: 2% 0 ;
   padding: 2%;
-  max-width: 1000px;
-  min-width: 700px;
 }
 
 
 .intro{
   background-color:rgba(255,255,255,.4);
   overflow: auto;
+  margin: 0 0 2% 0;
   h1{
     color: #FF5E43;
-    margin: 4% 0 0 0;
+    padding: .5% 0;
   }
   h2{
     margin: 1% 0;
@@ -92,7 +107,27 @@ ul{
   position: absolute;
   top: 0;
   width: 100%;
-  color: black;
+  h2{
+    font-size: 2.8em;
+    padding: 2%;
+    border-bottom: 3px dashed #FF5E43;
+  }
+  a{
+    text-decoration: none;
+    color: yellow;
+    &:hover{
+      color: red;
+    }
+  }
+  li:hover{
+    background: none;
+    color: white;
+  }
+  p{
+    font-size: 2em;
+    font-family: $roboto;
+    line-height: 60px;
+  }
 }
 
 .side-bar{
@@ -106,7 +141,9 @@ ul{
   padding: 5px;
   margin: 5px 0;
   img{
-    width: 100%;
+    float: left;
+    width: 60%;
+    margin: 0 20px 0 0;
   }
 }
 
