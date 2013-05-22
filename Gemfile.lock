@@ -60,6 +60,7 @@ GEM
     neat (0.4.2)
       bourbon (>= 2.1)
       sass (>= 3.2)
+    newrelic_rpm (3.6.2.96)
     pg (0.14.1)
     polyglot (0.3.3)
     rack (1.4.1)
@@ -120,6 +121,7 @@ DEPENDENCIES
   haml-rails (>= 0.3.4)
   jquery-rails
   neat (~> 0.4.2)
+  newrelic_rpm
   pg
   rails (= 3.2.8)
   sass-rails (~> 3.2.3)
